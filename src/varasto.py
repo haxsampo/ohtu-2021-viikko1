@@ -3,9 +3,7 @@ class Varasto:
     '''varasto, tilavuus ja saldo'''
     def __init__(self, tilavuus, alku_saldo=0):
         '''konstruktori'''
-        #til = tilavuus
-        #if tilavuus > 0.0:
-        #    self.tilavuus = tilavuus
+        rikkoja = "Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
         self.vahentaa_kompleksisuutta_kysym(tilavuus)
         if alku_saldo < 0.0:
             # virheellinen, nollataan
