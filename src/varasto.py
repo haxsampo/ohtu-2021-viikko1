@@ -3,34 +3,10 @@ class Varasto:
     '''varasto, tilavuus ja saldo'''
     def __init__(self, tilavuus, alku_saldo=0):
         '''konstruktori'''
-        pitka = "sdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-        if len(pitka)>10:
-            if len(pitka)>20:
-                if len(pitka)>30:
-                    print("liian monta nested?")
-        stmt1=1
-        stmt2=2
-        stmt3=3
-        stmt4=4
-        stmt5=5
-        stmt6=6
-        stmt7=7
-        stmt8 =452
-        stmt9 =1
-        stmt10 =1
-        stmt11 =1
-        stmt12 =1
-        stmt13 =1
-        stmt14 =1
-        stmt15 =1
-
-
-        if tilavuus > 0.0:
-            self.tilavuus = tilavuus
-        else:
-            # virheellinen, nollataan
-            self.tilavuus = 0.0
-
+        #til = tilavuus
+        #if tilavuus > 0.0:
+        #    self.tilavuus = tilavuus
+        self.vahentaa_kompleksisuutta_kysym(tilavuus)
         if alku_saldo < 0.0:
             # virheellinen, nollataan
             self.saldo = 0.0
@@ -40,6 +16,14 @@ class Varasto:
         else:
             # täyteen ja ylimäärä hukkaan!
             self.saldo = tilavuus
+
+    def vahentaa_kompleksisuutta_kysym(self, til):
+        '''tässä pitää olla stringi'''
+        pal = 0.0
+        if til > 0.0:
+            pal = til
+        self.tilavuus = pal
+
 
     # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms.
     def paljonko_mahtuu(self):
